@@ -5,20 +5,21 @@
  */
 package com.ramir.petclinic.model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author ramir
  */
-public class PetType extends BaseEntity{
-    private String name;
+public class BaseEntity implements Serializable {
+    private Long id;
 
-    public String getName() {
-        return name;
+    public Long getId() {
+        return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId(Long id) {
+        this.id = id;
     }
-    
     
 }
