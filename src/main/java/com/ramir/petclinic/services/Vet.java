@@ -5,14 +5,13 @@
  */
 package com.ramir.petclinic.services;
 
+import com.ramir.petclinic.model.Pet;
 import java.util.Set;
 
 /**
  *
  * @author ramir
  */
-public interface Vet {
-    Vet findById(Long id);
-    Vet save(Vet vet);
-    Set<Vet> findAll();
+public interface Vet  extends CrudService<Pet,Long>{
+
 }
